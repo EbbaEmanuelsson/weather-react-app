@@ -37,7 +37,7 @@ export default function Weather(){
                 className="float-left"
               />
                 <span className="temperature float-left">5</span>
-                <span className="unit mb-1">°C</span>
+                <span className="unit">°C</span>
             </div>
           </div>
           <div className="col-6 mt-1">
