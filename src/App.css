@@ -1,0 +1,13 @@
+.App {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.App .titel {
+  text-align: center;
+}
+
+.App footer {
+  font-size: 15px;
+  text-align: center;
+}
