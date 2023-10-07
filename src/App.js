@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
       <footer>
         This project was coded by Ebba Emanuelsson and is{" "}
         <a
-          href="https://reactjs.org"
+          href="https://github.com/EbbaEmanuelsson/weather-react-app"
           target="_blank"
           rel="noopener noreferrer"
         >
