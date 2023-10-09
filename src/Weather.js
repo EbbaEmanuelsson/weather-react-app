@@ -17,7 +17,7 @@ export default function Weather(props){
       city: response.data.city,
       description: response.data.condition.description,
       feelslike: response.data.temperature.feels_like,
-      icon: "https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png",
+      icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
       date: new Date(response.data.time * 1000),
     });
   }
@@ -68,3 +68,4 @@ export default function Weather(props){
     return "Loading...";
   }
 }
+
