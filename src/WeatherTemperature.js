@@ -3,12 +3,12 @@ import React, { useState } from "react";
 export default function WeatherTemperature(props){
     const [unit, setUnit] = useState("celsius");
     function showFahrenhait(event) {
-      event.prevntDefault();
+      event.preventDefault();
       setUnit("fahrenhait");
     }
 
     function showCelsius(event){
-        event.prevntDefault();
+        event.preventDefault();
         setUnit("celsius");
     }
     
@@ -24,7 +24,7 @@ export default function WeatherTemperature(props){
       </div>
     );
   } else {
-    let fahrenhait = (props.celsius * 9/5) + 32;
+    let fahrenhait = (props.celsius * 9 / 5) + 32;
     return (
       <div className="WeatherTemperature">
         <span className="temperature float-left">
