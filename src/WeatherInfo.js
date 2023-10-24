@@ -12,20 +12,22 @@ export default function WeatherInfo(props){
           </li>
           <li>{props.data.description}</li>
         </ul>
-        <div className="row mt-1">
-          <div className="col-6">
-            <div className="clearfix d-flex align-items-center">
+        <div className="row">
+          <div className="col-2 MarginIcon">
+            <div className="clearfix d-flex align-items-center InfoIcon">
               <img
                 src={props.data.icon}
                 alt={props.data.description}
-                className="float-left"
+                className="float-left mr-5"
               />
-              <div className="float-left">
-                <WeatherTemperature celsius={props.data.temperature} />
-              </div>
             </div>
           </div>
-          <div className="col-6 mt-3 list">
+          <div className="col-5">
+            <div className="float-left mt-3">
+              <WeatherTemperature celsius={props.data.temperature} />
+            </div>
+          </div>
+          <div className="col-5 mt-2 list">
             <ul>
               <li>Feels like: {Math.round(props.data.feelslike)}°C</li>
               <li>Humidity: {props.data.humidity} %</li>
